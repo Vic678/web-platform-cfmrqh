@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+     <h1>CHai aur code</h1>
+     <button id="Stop">Stop</button>
+
+  </body>
+  <script>
+    const SayVicky = function(){
+      console.log("Vicky")
+    }
+    setTimeout(SayVicky, 5000)
+    const ChangeText = function(){
+      document.querySelector('h1').
+      innerHTML = "Best Js Series"
+    }
+    const CHangeME = setTimeout(ChangeText, 7000)
+    document.querySelector('#Stop').
+    addEventListener('click', function(){
+      clearTimeout(CHangeME)
+      console.log("STOPPED")
+    })
+
+  </script>
+</html>
